@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('ionicTopTabs')
+    .module('ionicTopTabs', [])
     .directive('topTabs', topTabs);
 
   /** @ngInject */
@@ -15,7 +15,13 @@
       },
       required: 'type',
       replace: true,
-      templateUrl: './tabs.html',
+      template: '<section class="tabs-top tabs-background-light cs-top-tabs">' + 
+                  '<div class="tab-nav tabs">' + 
+                    '<a class="tab-item" ng-repeat="item in tabs" ng-class="{\'tab-item-active\': item.id==activated}" ng-click="active(item.id)">' + 
+                      '<span class="tab-title">{{item.title}}</span>' +
+                    '</a>' +
+                  '</div>' + 
+                '</section>',
       link: function(scope, element, attr) {
         $timeout(function() {
           var type = attr.type;

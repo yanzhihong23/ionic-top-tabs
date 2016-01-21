@@ -4,7 +4,7 @@
     height: 40px;
     line-height: 40px;
     border: 0;
-    border-top: solid 1px $border-color;
+    border-top: solid 1px $border-color !important;
     .tab-item{
       max-width: 50%;
     }
