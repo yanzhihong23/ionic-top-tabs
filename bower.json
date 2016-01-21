@@ -1,0 +1,33 @@
+{
+  "name": "ionic-top-tabs",
+  "version": "0.1.0",
+  "description": "Ionic top tabs",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "ionic",
+    "tabs"
+  ],
+  "main": [
+    "tabs.directive.js",
+    "tabs.scss"    
+  ],
+  "bugs": "https://github.com/yanzhihong23/ionic-top-tabs/issues",
+  "license" : "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/yanzhihong23/ionic-top-tabs"
+  },
+  "author": {
+    "name" : "Hom Yan",
+    "email" : "yanzhihong23@qq.com"
+  },
+  "files": [
+    "angular-qrcode.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": ">=1.4.8",
+    "ionic": ">=1.1.1"
+  }
+}
